@@ -4,6 +4,45 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Number Guess</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="./StyleSheet/style.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="main-box p1box">
+      <h2>Player 1</h2>
+      <p class="p1error error"></p>
+      <input
+        class="p1input"
+        type="text"
+        placeholder="Enter a random number..."
+      />
+      <button class="p1btn">Go</button>
+    </div>
+
+    <div class="main-box p2box">
+      <div class="p2-header">
+        <h2>Player 2</h2>
+        <h2><span class="p2-counter"></span>/5</h2>
+      </div>
+      <p class="p2error error"></p>
+      <input
+        class="p2input"
+        type="text"
+        placeholder="Enter a random number..."
+      />
+      <button class="p2btn">Check</button>
+    </div>
+    <div class="winner">
+      <img src="./Image/popular-gif.gif" class="winner-img" alt="winner" />
+      <h1 class="winner-announce">Player 1 Wins</h1>
+      <button class="retry">Retry?</button>
+    </div>
+
+    <script src="./JavaScript/script.js"></script>
+  </body>
 </html>
